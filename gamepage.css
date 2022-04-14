@@ -8,6 +8,11 @@
     width: 25%;
     height: auto;
   }
+
+  .bigrockimage {
+    width: 15%;
+    height: auto;
+  }
   
   /* Style the button and place it in the middle of the container/image */
   .container .btn {
