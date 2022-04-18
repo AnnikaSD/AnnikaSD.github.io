@@ -3,6 +3,7 @@
     width: 50%;
   }
   
+  
   /* Make the image responsive */
   .paperandscissors {
     width: 25%;
@@ -10,8 +11,8 @@
   }
 
   .bigrockimage {
-    width: 25%;
-    height: 15%;
+    width: 50%;
+    height: 50%;
   }
   
   /* Style the button and place it in the middle of the container/image */
