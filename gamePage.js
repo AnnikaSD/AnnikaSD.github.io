@@ -5,7 +5,7 @@
  let winner = 'There is a winner!';
  const getcomputerChoice = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
  const getUserchoice = 0;
- 
+ console.log('inside js file');
  
   if (getcomputerChoice === paper && getUserchoice === rock) { 
    winner = 'The computer wins!';
