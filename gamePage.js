@@ -29,4 +29,4 @@
      winner = 'Uh oh, Its a tie!';
   } 
   
- 
+  document.getElementById("winnertext").innerHTML = winner;
