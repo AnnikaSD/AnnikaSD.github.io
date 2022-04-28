@@ -53,3 +53,8 @@ margin: 15px;
   .container .btn:hover {
     background-color: black;
   }
+
+  .winnertextcss {
+    font-size: 16px;
+    font-family: "fantasy";
+  }
