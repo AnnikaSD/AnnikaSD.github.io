@@ -3,21 +3,27 @@
  const paper = 2 ;
  const scissors = 3;
  let winner = 'There is a winner!';
- const getcomputerChoice = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+ let getcomputerChoice = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
  let getUserchoice = 0;
 
+ function refreshcomputerchoice() {
+    getcomputerChoice = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+}
  function updateuserchoicetoRock() {
     getUserchoice = rock;
+    refreshcomputerchoice();
     getwinner();
-  document.getElementById("winnertext").innerHTML = winner;
+ document.getElementById("winnertext").innerHTML = winner;
  }
  function updateuserchoicetoPaper() {
    getUserchoice = paper;
+   refreshcomputerchoice();
    getwinner();
   document.getElementById("winnertext").innerHTML = winner;
 }
 function updateuserchoicetoScissors() {
    getUserchoice = scissors;
+   refreshcomputerchoice();
    getwinner();
   document.getElementById("winnertext").innerHTML = winner;
 }
