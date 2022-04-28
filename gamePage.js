@@ -4,9 +4,18 @@
  const scissors = 3;
  let winner = 'There is a winner!';
  const getcomputerChoice = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
- const getUserchoice = 0;
- console.log('inside js file');
- 
+ let getUserchoice = 0;
+
+ function updateuserchoicetoRock() {
+    getUserchoice = rock;
+ }
+ function updateuserchoicetoPaper() {
+   getUserchoice = paper;
+}
+function updateuserchoicetoScissors() {
+   getUserchoice = scissors;
+}
+ function getwinner() {
   if (getcomputerChoice === paper && getUserchoice === rock) { 
    winner = 'The computer wins!';
 } else if  (getcomputerChoice === paper && getUserchoice === paper) { 
@@ -27,6 +36,6 @@
      winner = "The computer wins! :D";
   }  else if  (getcomputerChoice === scissors && getUserchoice === scissors) { 
      winner = 'Uh oh, Its a tie!';
-  } 
-  
+  } }
+  getwinner();
   document.getElementById("winnertext").innerHTML = winner;
