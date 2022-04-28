@@ -4,9 +4,11 @@
  const scissors = 3;
  let winner = 'There is a winner!';
  let getcomputerChoice = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+ let computeranswer = `The computer picked ${getcomputernumbertext(getcomputerChoice)}`;  
  let getUserchoice = 0;
 
- function refreshcomputerchoice() {
+ function refreshcomputerchoice() { 
+    computeranswer = `The computer picked ${getcomputernumbertext(getcomputerChoice)}`;
     getcomputerChoice = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
 }
  function updateuserchoicetoRock() {
@@ -27,7 +29,17 @@ function updateuserchoicetoScissors() {
    getwinner();
   document.getElementById("winnertext").innerHTML = winner;
 }
-
+function getcomputernumbertext(computernumberanswer) {
+   if (computernumberanswer === rock) {
+      return "rock";
+   }
+   if (computernumberanswer === paper) {
+      return "paper";
+   }
+   if (computernumberanswer === scissors) {
+      return "scissors";
+   }
+}
  function getwinner() { 
   if (getcomputerChoice === paper && getUserchoice === rock) { 
    winner = 'The computer wins!';
