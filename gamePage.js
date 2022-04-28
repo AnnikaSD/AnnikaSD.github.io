@@ -8,14 +8,21 @@
 
  function updateuserchoicetoRock() {
     getUserchoice = rock;
+    getwinner();
+  document.getElementById("winnertext").innerHTML = winner;
  }
  function updateuserchoicetoPaper() {
    getUserchoice = paper;
+   getwinner();
+  document.getElementById("winnertext").innerHTML = winner;
 }
 function updateuserchoicetoScissors() {
    getUserchoice = scissors;
+   getwinner();
+  document.getElementById("winnertext").innerHTML = winner;
 }
- function getwinner() {
+
+ function getwinner() { 
   if (getcomputerChoice === paper && getUserchoice === rock) { 
    winner = 'The computer wins!';
 } else if  (getcomputerChoice === paper && getUserchoice === paper) { 
