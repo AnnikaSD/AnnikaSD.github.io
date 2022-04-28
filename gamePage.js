@@ -8,8 +8,9 @@
  let getUserchoice = 0;
 
  function refreshcomputerchoice() { 
-    computeranswer = `The computer picked ${getcomputernumbertext(getcomputerChoice)}`;
-    getcomputerChoice = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+   getcomputerChoice = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+   computeranswer = `The computer picked ${getcomputernumbertext(getcomputerChoice)}`;
+    document.getElementById("computertext").innerHTML = computeranswer;
 }
  function updateuserchoicetoRock() {
     getUserchoice = rock;
